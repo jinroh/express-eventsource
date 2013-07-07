@@ -1,0 +1,26 @@
+{
+  "name": "express-eventsource",
+  "version": "0.0.1",
+  "description": "Server-sent events middleware for expressjs",
+  "main": "lib/sse.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jinroh/express-eventsource.git"
+  },
+  "keywords": [
+    "server-sent-events",
+    "sse",
+    "event-source",
+    "express",
+    "expressjs",
+    "middleware"
+  ],
+  "author": "jinroh (Pierre Guilleminot)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/jinroh/express-eventsource/issues"
+  },
+  "devDependencies": {
+    "express": "~3.3.3"
+  }
+}
