@@ -14,7 +14,7 @@ $ npm install express-eventsource
 
 ```javascript
 var express = require('express');
-var eventsource = require('../lib/sse');
+var eventsource = require('express-eventsource');
 
 var sse = eventsource({
   maxConnexions: 2
