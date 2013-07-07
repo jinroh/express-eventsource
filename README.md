@@ -17,7 +17,7 @@ var express = require('express');
 var eventsource = require('express-eventsource');
 
 var sse = eventsource({
-  maxConnexions: 2
+  maxConnections: 2
 });
 
 var sendFoo = sse.sender('foo');

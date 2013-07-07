@@ -2,7 +2,7 @@ var express = require('express');
 var expressEs = require('../lib/sse');
 
 var sse = expressEs({
-  maxConnexions: 2
+  maxConnections: 2
 });
 
 var broadcast = sse.sender('foo');
