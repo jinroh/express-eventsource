@@ -17,19 +17,19 @@ var express = require('express');
 var eventsource = require('express-eventsource');
 
 var sse = eventsource({
-  maxConnections: 2
+  connections: 2
 });
 
-var sendFoo = sse.sender('foo');
-var sendBar = sse.sender('bar');
+var broadcast = sse.sender('foo');
 
 var app = express()
   .use(sse.middleware())
   .listen(3000);
 
 setInterval(function() {
-  broadcast({ bar: 'baz' });
+  broadcast({ bar: 'baz' }); // <=> sse.send('foo', { bar: 'baz' })
 }, 2000);
+
 ```
 
 (see `/examples`)
