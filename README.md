@@ -29,7 +29,6 @@ var app = express()
 setInterval(function() {
   broadcast({ bar: 'baz' }); // <=> sse.send('foo', { bar: 'baz' })
 }, 2000);
-
 ```
 
 (see `/examples`)
