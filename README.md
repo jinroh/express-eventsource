@@ -27,7 +27,7 @@ var app = express()
   .listen(3000);
 
 setInterval(function() {
-  broadcast({ bar: 'baz' }); // <=> sse.send('foo', { bar: 'baz' })
+  broadcast({ bar: 'baz' }); // <=> sse.send({ bar: 'baz' }, 'foo')
 }, 2000);
 ```
 
