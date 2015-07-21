@@ -1,6 +1,6 @@
 {
   "name": "express-eventsource",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Server-sent events middleware for expressjs",
   "main": "lib/sse.js",
   "repository": {
